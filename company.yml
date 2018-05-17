@@ -1,3 +1,6 @@
 ## YAML Template.
 ---
-message: "Hello world from git!"
+spring: 
+  profiles: cloud
+  
+message: "Hello world2 from git!"
