@@ -1,13 +1,12 @@
 ## YAML Template.
 ---
-myProperty: ${vcap.services.myUPSi.credentials.paramKey}
 
 spring:
  cloud:
    config:
      server:
        git:
-         uri:
+         uri:${vcap.services.repo.credentials.url}
          # ONLY include username and pwd if the repo is private
          username:
          password:
